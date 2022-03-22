@@ -1,0 +1,20 @@
+@use "../../scss/" as *;
+.todo {
+  border-bottom: 1px solid $darkGrayishBlue;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+.box {
+  &__check {
+    cursor: pointer;
+  }
+  &__text--checked {
+    text-decoration: line-through;
+    color: $darkGrayishBlue;
+  }
+}
+
+.checked {
+  background-image: $checkBackground;
+}

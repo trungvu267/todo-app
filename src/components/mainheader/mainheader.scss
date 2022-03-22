@@ -1,0 +1,15 @@
+@use "../../scss/" as *;
+
+.mainheader {
+  margin-bottom: 50px;
+  @include flex(space-between, center);
+  &__logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    color: $lightGray;
+  }
+  &__icon {
+    cursor: pointer;
+  }
+}

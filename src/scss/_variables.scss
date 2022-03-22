@@ -1,0 +1,32 @@
+// The designs were created to the following widths:
+$mobile-width: 400px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// COLORS
+
+// primary
+$purple: hsl(280, 87%, 65%);
+$darkGrayishBlue: hsl(236, 9%, 61%);
+$brightBlue: hsl(220, 98%, 61%);
+$checkBackground: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+// $theme: (
+//   $light-theme:
+//     (
+//       $lightGray: hsl(0, 0%, 98%),
+//       $lightGrayishBlue: hsl(233, 11%, 84%),
+//   $darkGrayishBlue: hsl(236, 9%, 61%);
+//     ),
+//   $dark-theme: (
+$darkBlue: hsl(235, 21%, 11%);
+//     $darkDesaturatedBlue: hsl(235, 24%, 19%),
+//     $lightGrayishBlue: hsl(234, 39%, 85%),
+//     $lightGrayishBluehover: hsl(236, 33%, 92%),
+// $darkGrayishBlue: hsl(234, 11%, 52%);
+//   )
+// );
+$veryDarkGrayishBlue: hsl(237, 14%, 26%);
+$darkDesaturatedBlue: hsl(235, 24%, 19%);
+$verylightGrayishBlue: hsl(236, 33%, 92%);
+$lightGray: hsl(0, 0%, 98%);
+$lightGrayishBlue: hsl(233, 11%, 84%);

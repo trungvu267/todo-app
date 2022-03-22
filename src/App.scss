@@ -1,0 +1,52 @@
+@use "./scss/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.App {
+  height: 100vh;
+  background-color: $lightGrayishBlue;
+  &__dark-theme {
+    // background-color: $lightGrayishBlue;
+    @include dark_theme(background-color, $darkBlue);
+  }
+}
+.box {
+  @include flex(space-between, center);
+  background-color: $lightGray;
+  &__theme--dark {
+    @include dark_theme(background-color, $veryDarkGrayishBlue);
+    @include dark_theme(color, $lightGray);
+  }
+  &__check {
+    @include flex(center, center);
+    width: 64px;
+    height: 64px;
+  }
+  &__circle {
+    width: 37px;
+    height: 37px;
+    border: 1px solid $lightGrayishBlue;
+    border-radius: 50%;
+    padding: 8px 12px;
+    &:hover {
+      border: 1px solid $brightBlue;
+    }
+  }
+  &__text {
+    padding-left: 8px;
+    flex-grow: 1;
+  }
+}
