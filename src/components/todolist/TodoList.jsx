@@ -7,7 +7,7 @@ import Todo from '../todo/Todo'
 const TodoList = ({activeStatus}) => {
 
   
-  const {todos, dispatch} = useContext(TodosContext)
+  const {todos} = useContext(TodosContext)
   const {darkTheme} = useContext(ThemeContext)
   const [todolist, setTodolist] = useState(todos)
 

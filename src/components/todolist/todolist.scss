@@ -10,3 +10,13 @@
     @include dark_theme(background-color, $darkGrayishBlue);
   }
 }
+@include tablet {
+  .todolist {
+    height: 256px;
+  }
+}
+@include mobile {
+  .todolist {
+    height: 256px;
+  }
+}

@@ -12,7 +12,7 @@ const TodoInput = ({todo,setTodo}) => {
   const {darkTheme} = useContext(ThemeContext)
 
   const handleChange = (e) =>{
-    setTodo('' || e.target.value)
+    setTodo(e.target.value)
   }
   const handleSubmit = (e) =>{
     e.preventDefault()

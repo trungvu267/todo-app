@@ -5,11 +5,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: background-color 0.45s;
 }
 html,
 body {
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
 }
 
 a {
@@ -21,11 +23,13 @@ a {
   &__dark-theme {
     // background-color: $lightGrayishBlue;
     @include dark_theme(background-color, $darkBlue);
+    transition: background-color 0.45s;
   }
 }
 .box {
   @include flex(space-between, center);
   background-color: $lightGray;
+
   &__theme--dark {
     @include dark_theme(background-color, $veryDarkGrayishBlue);
     @include dark_theme(color, $lightGray);

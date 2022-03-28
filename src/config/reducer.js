@@ -8,11 +8,15 @@ const reducer =  (state,action) =>{
             })
             
         case 'ADD_TODO':
-            return [...state, {
-                id: nanoid(),
-                text: action.todo,
-                completed: false
-            }]
+            if (action.todo.length !== 0){
+                return [...state, {
+                    id: nanoid(),
+                    text: action.todo,
+                    completed: false
+                }]
+            }else{
+                return[...state]
+            }
       
         case 'REMOVE_TODO':
             const results = state.filter(todo=>(todo.id !== action.id))    
